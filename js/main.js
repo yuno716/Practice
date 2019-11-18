@@ -5,11 +5,10 @@
     const fizzNum = document.querySelector('input[name="text1"]');
     const buzzNum = document.querySelector('input[name="text2"]');
 
-    const Num = parseFloat(fizzNum.value, buzzNum.value);
-    // const fizz = parseFloat(fizzNum.value);
-    // const buzz = parseFloat(buzzNum.value);
+    const fizz = parseFloat(fizzNum.value);
+    const buzz = parseFloat(buzzNum.value);
 
-    if (Number.isInteger(Num)){
+    if (Number.isInteger(fizz, buzz)){
       for (let i = 1; i <= 100; i++) {
         if (i % fizzNum.value === 0 && i % buzzNum.value === 0) {
           const p = document.createElement('p');
